@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class App {
 
     private Scanner sc;
-    private WiseSayingController wiseSayingController = new WiseSayingController(sc);
-    private SystemController systemController = new SystemController();
+    private WiseSayingController wiseSayingController;
+    private SystemController systemController ;
 
     public App(Scanner sc) {
         this.sc = sc;

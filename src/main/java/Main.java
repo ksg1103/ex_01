@@ -22,6 +22,9 @@ public class Main
         String rst = byteArrayOutputStream.toString();
         System.out.println(rst);
         lamb();
+        Scanner sc = new Scanner(System.in);
+        App app = new App(sc);
+        app.run();
     }
     public static void lamb(){
         Scanner sc =new Scanner("""
