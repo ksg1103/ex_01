@@ -10,6 +10,14 @@ public class WiseSaying {
         this.saying = saying;
         this.author = author;
     }
+    public WiseSaying(String saying, String author) {
+
+        this.saying = saying;
+        this.author = author;
+    }
+    public boolean isNew() {
+        return id == 0;
+    }
 
     public int getId() {
         return id;
