@@ -6,15 +6,7 @@ public class TestUtil {
     static PrintStream ORIGINAL_OUT = System.out;
     static PrintStream CURRENT_OUT = System.out;
 
-    public static String run(String input){
-        // 입력값
-        Scanner sc = new Scanner(input);
 
-        //명언 프로그램 실행
-
-        //출력값
-
-    }
 
 
     public static Scanner genScanner(String input){
@@ -32,6 +24,7 @@ public class TestUtil {
         return byteArrayOutputStream;
     }
 
+    //출력 화면 다시 모니터로 돌리기
     public static void clearSetOutByteArray(ByteArrayOutputStream outputStream)throws  Exception{
         System.setOut(ORIGINAL_OUT);
         outputStream.close();

@@ -20,5 +20,7 @@ public class AppTest {
 
         assertThat(out).contains("===명언 앱===");
 
+
+
     }
 }
