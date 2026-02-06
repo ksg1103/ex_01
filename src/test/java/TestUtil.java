@@ -3,18 +3,19 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
 public class TestUtil {
-//    public static String run(String input){
-//        // 입력값
-//        Scanner sc = new Scanner(input);
-//
-//        //명언 프로그램 실행
-//
-//        //출력값
-//
-//    }
-
     static PrintStream ORIGINAL_OUT = System.out;
     static PrintStream CURRENT_OUT = System.out;
+
+    public static String run(String input){
+        // 입력값
+        Scanner sc = new Scanner(input);
+
+        //명언 프로그램 실행
+
+        //출력값
+
+    }
+
 
     public static Scanner genScanner(String input){
         return new Scanner(input);
@@ -35,6 +36,7 @@ public class TestUtil {
         System.setOut(ORIGINAL_OUT);
         outputStream.close();
         CURRENT_OUT.close();
+        // 종료 안하면, 자원 소모가 계속 된다.
     }
 
 }
