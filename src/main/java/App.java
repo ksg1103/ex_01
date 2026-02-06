@@ -9,6 +9,8 @@ public class App {
 
     public App(Scanner sc) {
         this.sc = sc;
+        this.wiseSayingController = new WiseSayingController(sc);
+        this.systemController = new SystemController();
     }
             public void run() {
                 System.out.println("== 명언 앱 ==");
