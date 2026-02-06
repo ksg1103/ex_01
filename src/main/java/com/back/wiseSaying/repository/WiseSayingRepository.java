@@ -27,7 +27,7 @@ public class WiseSayingRepository {
         return wiseSayings.removeIf(wiseSaying -> wiseSaying.getId() == id);
     }
 
-    public WiseSaying findByIdOrNull(int id) {
+    public WiseSaying findByIdOrNull(int id) { //여기서 optional로 반환을 한다면?
 
         return wiseSayings.stream()
                 .filter(wiseSaying -> wiseSaying.getId() == id)
