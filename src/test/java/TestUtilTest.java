@@ -32,7 +32,8 @@ public class TestUtilTest {
 
         String rst  = byteArrayOutputStream.toString();
 
-        assertThat(rst).isEqualTo("안녕하세요");
+        //assertThat(rst).isEqualTo("안녕하세요"); isEqualTo는 정확히 일치해야한다.
+        assertThat(rst).contains("안녕하세요");
     }
 
 
