@@ -25,8 +25,10 @@ public class Main
         System.out.println(rst);
         lamb();
         Scanner sc = new Scanner(System.in);
-        App app = new App(sc);
-        app.run();
+        //App app = new App(sc);
+        AppContext.init();
+        new App().run();
+
     }
     public static void lamb(){
         Scanner sc =new Scanner("""
