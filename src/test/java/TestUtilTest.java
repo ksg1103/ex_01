@@ -25,7 +25,7 @@ public class TestUtilTest {
 
     @Test
     @DisplayName("TestUtill.setOutByteArray()")
-    void t2() {
+    void t2() throws Exception {
         ByteArrayOutputStream byteArrayOutputStream = TestUtil.setOutByteArray();
 
         System.out.println("안녕하세요.");
@@ -33,6 +33,11 @@ public class TestUtilTest {
         String rst  = byteArrayOutputStream.toString();
 
         //assertThat(rst).isEqualTo("안녕하세요"); isEqualTo는 정확히 일치해야한다.
+
+        TestUtil.clearSetOutByteArray(byteArrayOutputStream);
+        //모니터로 확인하고 싶은 시점
+        System.out.println("출력결과 : " + rst);
+
         assertThat(rst).contains("안녕하세요");
     }
 
