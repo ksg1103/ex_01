@@ -21,6 +21,7 @@ public class Main
 
         String rst = byteArrayOutputStream.toString();
         System.out.println(rst);
+        lamb();
     }
     public static void lamb(){
         Scanner sc =new Scanner("""
@@ -32,7 +33,7 @@ public class Main
         String str1 = sc.next();
         String str2= sc.next();
         String str3 = sc.next();
-
+        //엔터나 스페이스바를 치면 자동으로 다음 요소라는 것을 인식한다.
 
         System.out.print(str2);
     }
