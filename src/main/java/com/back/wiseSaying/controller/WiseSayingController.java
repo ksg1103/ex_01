@@ -1,3 +1,6 @@
+package com.back.wiseSaying.controller;
+
+import com.back.wiseSaying.entity.WiseSaying;
 
 import java.util.ArrayList;
 import java.util.List;
