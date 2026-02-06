@@ -2,7 +2,7 @@ package app;
 
 import Test.TestUtil;
 import com.back.App;
-import com.back.AppContext;
+import com.back.global.AppContext;
 
 import java.io.ByteArrayOutputStream;
 import java.util.Scanner;

@@ -1,5 +1,7 @@
 package com.back;
 
+import com.back.global.AppContext;
+import com.back.global.Rq;
 import com.back.system.controller.SystemController;
 import com.back.wiseSaying.controller.WiseSayingController;
 
@@ -26,12 +28,18 @@ public class App {
 
 
                 while (true) {
+
+
                     System.out.print("명령) ");
                     String cmd = sc.nextLine();
 
-                    switch (cmd) {
+                    Rq rq = new Rq(cmd);
+                    String action = rq.getActionName();
+
+                    switch (action) {
                         case "등록" -> wiseSayingController.actionAdd();
                         case "목록" -> wiseSayingController.actionList();
+                        case "삭제" -> wiseSayingController.actionDelete(rq);
 
                         case "종료" -> {
                             systemController.actionExit();

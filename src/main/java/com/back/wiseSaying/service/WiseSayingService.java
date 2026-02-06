@@ -1,6 +1,6 @@
 package com.back.wiseSaying.service;
 
-import com.back.AppContext;
+import com.back.global.AppContext;
 import com.back.wiseSaying.entity.WiseSaying;
 import com.back.wiseSaying.repository.WiseSayingRepository;
 
@@ -24,5 +24,8 @@ public class WiseSayingService {
 
     public List<WiseSaying> findListDesc() {
         return wiseSayingRepository.findListDesc();
+    }
+    public boolean delete(int id) {
+        return wiseSayingRepository.delete(id);
     }
 }

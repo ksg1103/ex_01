@@ -94,7 +94,7 @@ public class WiseSayingControllerTest {
                 등록
                 과거에 집착하지 마라.
                 작자미상
-                목록
+                
                 삭제?id=1
                 목록
                 """);
@@ -103,6 +103,7 @@ public class WiseSayingControllerTest {
                 .contains("1번 명언이 삭제되었습니다.")
                 .contains("2 / 작자미상 / 과거에 집착하지 마라.")
                 .doesNotContain("1 / 작자미상 / 현재를 사랑하라."); //이 문장이 포함되어 있으면 안된다.
+
 
     }
 }

@@ -1,4 +1,4 @@
-package com.back;
+package com.back.global;
 
 import com.back.system.controller.SystemController;
 import com.back.wiseSaying.controller.WiseSayingController;

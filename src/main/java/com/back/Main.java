@@ -1,5 +1,7 @@
 package com.back;
 
+import com.back.global.AppContext;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.Scanner;
