@@ -1,6 +1,7 @@
 package com.back;
 
 import com.back.global.AppContext;
+import com.back.wiseSaying.entity.WiseSaying;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -30,7 +31,8 @@ public class Main
         //App app = new App(sc);
         AppContext.init();
         new App().run();
-
+        WiseSaying w = new WiseSaying( "너 자신을 알라", "소크라테스");
+        System.out.println(w);
     }
     public static void lamb(){
         Scanner sc =new Scanner("""
