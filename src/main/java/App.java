@@ -7,5 +7,9 @@ public class App {
     }
     public static void run(){
         System.out.println("===명언 앱===");
+        System.out.println("명령)");
+        System.out.println("명언");
+        System.out.println("작가");
+
     }
 }
