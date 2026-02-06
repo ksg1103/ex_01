@@ -6,6 +6,6 @@ public class App {
         this.scanner = scanner;
     }
     public static void run(){
-        System.out.println("=== 명언앱===");
+        System.out.println("===명언 앱===");
     }
 }
