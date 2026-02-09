@@ -218,5 +218,5 @@ public class WiseSayingControllerTest {
                 .contains("1 / 작자미상 / 현재를 사랑하라.")
                 .doesNotContain("2 / 소크라테스 / 너 자신을 알라");
     }
-
+//
 }
