@@ -36,14 +36,14 @@ public class WiseSayingController {
     public void actionList(Rq rq) {
         String keywordType = rq.getParam("keywordType","");
         String kw = rq.getParam("keyword","");
-
+        String kwt= rq.getParam("keywordType", "");
         System.out.println("----------------------");
         System.out.println("검색타입 : %s".formatted("content"));
         System.out.println("검색어 : %s".formatted("과거"));
         System.out.println("번호 / 작가 / 명언");
         System.out.println("----------------------");
 
-        List<WiseSaying> wiseSayings = wiseSayingService.findListDesc(kw);
+        List<WiseSaying> wiseSayings = wiseSayingService.findListDesc(kw,kwt);
 
         wiseSayings
                 //.reversed()
