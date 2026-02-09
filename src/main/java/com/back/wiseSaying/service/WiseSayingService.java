@@ -21,14 +21,21 @@ public class WiseSayingService {
         return wiseSaying;
     }
 
+//    public PageDto findListDesc(String kw, String kwt, int page, int pageSize) {
+//        //return wiseSayingRepository.findListDesc();
+//        return switch(kwt){
+//            case "content" ->wiseSayingRepository.findByContentKeywordOrderdByDesc(kw, page, pageSize);
+//            case "author" -> wiseSayingRepository.findByauthorKeywordOrderdByDesc(kw, page, pageSize);
+//            default -> wiseSayingRepository.findListDesc( page, pageSize);
+//        };
+//
+//    }
     public PageDto findListDesc(String kw, String kwt, int page, int pageSize) {
-        //return wiseSayingRepository.findListDesc();
-        return switch(kwt){
-            case "content" ->wiseSayingRepository.findByContentKeywordOrderdByDesc(kw, page, pageSize);
-            case "author" -> wiseSayingRepository.findByauthorKeywordOrderdByDesc(kw, page, pageSize);
-            default -> wiseSayingRepository.findListDesc( page, pageSize);
+        return switch (kwt) {
+            case "content" -> wiseSayingRepository.findByContentKeywordOrderByDesc(kw, page, pageSize);
+            case "author" -> wiseSayingRepository.findByAuthorKeywordOrderByDesc(kw, page, pageSize);
+            default -> wiseSayingRepository.findListDesc(page, pageSize);
         };
-
     }
     public boolean delete(int id) {
         return wiseSayingRepository.delete(id);
