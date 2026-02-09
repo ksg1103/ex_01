@@ -21,7 +21,7 @@ public class Main
 
         System.out.println("hi");
         System.out.println("hi");
-
+        //Util.file.touch("test.txt");
         System.setOut(ORIGINAL_OUT);
 
         String rst = byteArrayOutputStream.toString();
@@ -33,6 +33,7 @@ public class Main
         new App().run();
         WiseSaying w = new WiseSaying( "너 자신을 알라", "소크라테스");
         System.out.println(w);
+
     }
     public static void lamb(){
         Scanner sc =new Scanner("""
