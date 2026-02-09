@@ -22,12 +22,12 @@ public class WiseSayingService {
         return wiseSaying;
     }
 
-    public List<WiseSaying> findListDesc(String kw,String kwt) {
+    public List<WiseSaying> findListDesc(String kw,String kwt,int page, int pageSize) {
         //return wiseSayingRepository.findListDesc();
         return switch(kwt){
-            case "content" ->wiseSayingRepository.findByContentKeywordOrderdByDesc(kw);
-            case "author" -> wiseSayingRepository.findByauthorKeywordOrderdByDesc(kw);
-            default -> wiseSayingRepository.findListDesc();
+            case "content" ->wiseSayingRepository.findByContentKeywordOrderdByDesc(kw, page, pageSize);
+            case "author" -> wiseSayingRepository.findByauthorKeywordOrderdByDesc(kw, page, pageSize);
+            default -> wiseSayingRepository.findListDesc( page, pageSize);
         };
 
     }

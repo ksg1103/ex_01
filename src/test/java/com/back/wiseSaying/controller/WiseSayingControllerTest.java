@@ -236,7 +236,9 @@ void t13() {
 
     input += "목록\n";
 
+
     String out = AppTestRunner.run(input);
+    System.out.println(out);
 
     assertThat(out)
             .contains("10 / 작가 10 / 명언 10")
