@@ -1,6 +1,7 @@
 package com.back;
 
 import com.back.global.AppContext;
+import com.back.standard.util.Util;
 import com.back.wiseSaying.entity.WiseSaying;
 
 import java.io.ByteArrayOutputStream;
@@ -21,7 +22,7 @@ public class Main
 
         System.out.println("hi");
         System.out.println("hi");
-        //Util.file.touch("test.txt");
+        Util.file.touch("test.txt");
         System.setOut(ORIGINAL_OUT);
 
         String rst = byteArrayOutputStream.toString();
